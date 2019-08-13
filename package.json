@@ -1,0 +1,20 @@
+{
+  "name": "imgbed",
+  "version": "1.0.3",
+  "repository": "https://github.com/lblblong/imgbed.git",
+  "author": "lblblong <1162275271@qq.com>",
+  "license": "MIT",
+  "main": "./dist/ImgBed.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "flyio": "^0.6.14"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.5.3",
+    "ts-node": "^8.3.0"
+  }
+}
