@@ -27,20 +27,22 @@ yarn add imgbed
 
 ```javascript
 const ImgBed = require('imgbed').default
-const { resolve } = require('path')
 
-// 上传图片
-ImgBed.sm('/img.jpg')
-	  .then(url => {
-    	  console.log(url)
-	  })
+ImgBed.sm('./tupian.jpg').then(url => {
+  console.log('SM：', url)
+})
 
-// 如果上传当前路径下的图片
-let imgPath = resolve(__dirname, './img1.jpg')
-ImgBed.sm(imgPath)
-	  .then(url => {
-    	  console.log(url)
-	  })
+ImgBed.nt('./tupian.jpg').then(url => {
+  console.log('牛图：', url)
+})
+
+ImgBed.sina1('./tupian.jpg').then(url => {
+  console.log('新浪1：', url)
+})
+
+ImgBed.sina2('./tupian.jpg').then(url => {
+  console.log('新浪2：', url)
+})
 ```
 
 API
